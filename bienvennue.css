@@ -1,0 +1,159 @@
+/*CSS POUR L'ENTETE*/
+.entete {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #f9f990;
+    z-index: 1000;
+    background-color: #3f5954;
+    height: 90px;
+}
+.school-logo {
+    width: 110px;
+    height: 90px;
+}
+.titre {
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.header-buttons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.boutton2:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.boutton{
+    margin-right: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-color: white;
+    color: #f9f990;
+    border-radius: 15px;
+}
+.boutton:hover{
+    color: white;
+    text-decoration: none;
+}
+/*CSS POUR LE CONTENU*/
+.image-container {
+    margin-top: 100px;
+    width: 97%;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #cfcece80,
+    -5px -5px 10px #cfcece80;
+    border-radius: 15px;
+}
+.photo {
+    height: 500px;
+    width: 100%;
+}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 40px;
+    text-align: left;
+}
+.superposition {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.tab{
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+}
+.tab_contient1{
+    padding: 10px;
+    padding-bottom: 83px;
+}
+.titre2 {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 0px;
+    font-weight: bolder;
+}
+.titre1 {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 0px;
+    font-weight: bolder;
+}
+
+.tab_contient{
+    padding: 10px;
+    padding-bottom: 35px;
+}
+.liste{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.tab2{
+    width: 100%;
+    padding: 10px;
+}
+.div3{
+    display: flex;
+}
+table{
+    width: 50%;
+    box-shadow: 5px 5px 10px #cfcece80,
+    -5px -5px 10px #cfcece80;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table:hover{
+    background-color: #f9f990;
+}
+.paragraphe1{
+    color: #3f5954;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.a1{
+    color: #3f5954;
+}
+/*CSS POUR LE FOOTER*/
+.footer{
+    display: flex;
+    padding: 10px;
+    background-color: #3f5954;
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.div4{
+    width: 50%;
+    font-size: 20px;
+}
+.div5{
+    width: 50%;
+    font-size: 20px;
+}
+/*CSS POUR LES LIENS SUR LA PAGE*/
+a{
+    font-size: 20px;
+    margin-right: 20px; 
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a:link,
+a:visited {
+    color: #f9f990; /* Couleur du texte pour les liens non visités et visités */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+}
+a:hover{
+    color:white;
+}

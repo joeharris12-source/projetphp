@@ -1,0 +1,218 @@
+/*CSS POUR LE BODY*/
+.contient{
+    width: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+    -5px -5px 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    border: 2px solid #3f5954;
+}
+h2{
+    color: darkslategray;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+input{
+    display: block;
+    border: 2px solid;
+    width: 95%;
+    padding: 10px; ;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: darkslategray;
+    font-size: 18px;
+    padding: 10px;
+}
+button{
+    background-color: darkslategray;
+    padding: 10px 15px;
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+}
+button:hover{
+    opacity: .8;
+}
+.error { 
+    background-color: #f2dede;
+    color: #a94442 ;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
+.corp{
+    background-image: url('iai-1920.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/*CSS POUR L'ENTETE*/
+.entete {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #f9f990;
+    z-index: 1000;
+    background-color: #3f5954;
+    height: 90px;
+}
+.school-logo {
+    width: 110px;
+    height: 90px;
+}
+.header-buttons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.boutton{
+    margin-right: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-color: white;
+    color: #f9f990;
+    border-radius: 15px;
+}
+.boutton:hover{
+    color: white;
+    text-decoration: none;
+}
+.titre {
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.header-buttons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.boutton2:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.boutton{
+    margin-right: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-color: white;
+    color: #f9f990;
+    border-radius: 15px;
+}
+.boutton:hover{
+    color: white;
+    text-decoration: none;
+}
+a{
+    font-size: 20px;
+    margin-right: 20px; 
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a:link,
+a:visited {
+    color: #f9f990; /* Couleur du texte pour les liens non visités et visités */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+}
+a:hover{
+    color:white;
+}
+.footer{
+    display: flex;
+    padding: 10px;
+    background-color: #3f5954;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.div4{
+    width: 50%;
+    font-size: 20px;
+}
+.div5{
+    width: 50%;
+    font-size: 20px;
+}
+    /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+    -5px -5px 10px rgba(0, 0, 0, 0.5);*/
+.first_title{
+    background-color: darkslategray;
+    color: #f9f9a0;
+    padding-top: 20px;
+    border-radius: 25px;
+}
+.first_tit{
+    background-color: darkslategray;
+    color: #f9f9a0;
+    border-radius: 25px;
+}
+.div1 {
+    background-color: darkslategray;
+    font-family: Noto Sans;
+    font-size: 35px;
+    color: #f9f9a0;
+    top: 0;
+    width: 100%;
+    height: 90px;
+}
+.form-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: darkslategray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mb-4 {
+    width: 100%;
+}
+.contient{
+    padding: 20px;
+}
+input.form-control {
+    font-weight: bold;
+    height: 35px;
+    border-color: #3f5954;
+    outline-color: #3f5954;
+}
+select.form-control {
+    height: 35px;
+    border-color: #3f5954;
+    outline-color: #3f5954;
+}
+#soumettre{
+    background-color: #3f5954;
+    border-color: #3f5954;
+}
+.conteneur{
+    margin-top: 110px;
+    border: 2px solid #3f5954;
+    width: 60%;
+    border-radius: 15px;
+    background-color: rgb(244, 247, 250);
+}
+.p1{
+    color: #3f5954;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Candidature.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="exercice1.js"></script>
+</head>
+<body class="corp">
+    <!-- Barre de navigation -->
+    <div class="entete">
+        <a href="bienvenu.html"><img src="logoiai.jpg" alt="Logo de l'école" class="school-logo"></a>
+        <p class="titre">IAI-TOGO</p>
+        <div class="header-buttons">
+            <a class="boutton" href="acceuil2.php">Retour &agrave; l'accueil</a>
+        </div>
+    </div>
+<center>
+<div class="conteneur">
+    <form action="insertion.php" method="post" enctype="multipart/form-data">
+        <table >
+            <tr>
+                <td class="td1">
+                    <center><p class="p1">Remplissez le formulaire pour soumettre votre candidature</p></center>
+                    <hr color="#3f5954">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="contient">
+                        <div><p><i>Informations personnelles</i></p></div>
+                        <div class="mb-4">
+                            <label for="nom" class="form-label">Nom:</label>
+                            <input type="text" class="form-control" id="nom" name="nom">
+                        </div>
+                        <div class="mb-4">
+                            <label for="prenom" class="form-label">Prenoms:</label>
+                            <input type="text" class="form-control" id="prenom" name="prenom">
+                        </div>
+                        <div class="mb-4">
+                            <label for="photo" class="form-label">Photo d'identité:</label>
+                            <input type="file" class="form-control" id="photo" name="photo" accept="image/*">
+                        </div>
+                        <div class="mb-4">
+                            <label for="date" class="form-label">Date de naissance:</label><br>
+                            <span id="date_n"></span>
+                            <input type="date" class="form-control" id="date" name="date">
+                        </div>
+                        <div class="mb-4">
+                            <label for="sexe" class="form-label">Sexe:</label>
+                            <select class="form-control" id="sexe" name="sexe">
+                                <option selected disabled>--Votre genre--</option>
+                                <option value="M" name="sexe">M</option>
+                                <option value="F"name="sexe">F</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="nation" class="form-label">Nationalité:</label>
+                            <input type="text" class="form-control" id="nation" name="nation">
+                        </div>
+                        <div class="mb-4">
+                            <label for="anneebac" class="form-label">Année d'obtention du BAC:</label><br>
+                            <span id="verif_an"></span>
+                            <input type="text" class="form-control" id="anneebac" name="anneebac">
+                        </div>
+                        <div class="mb-4">
+                            <label for="serie" class="form-label">Série du BAC:</label>
+                            <select class="form-control" id="serie" name="serie">
+                                <option selected disabled>-- Choisir votre série--</option>
+                                <option value="C" name="serie">C</option>
+                                <option value="D" name="serie">D</option>
+                                <option value="E" name="serie">E</option>
+                                <option value="F1" name="serie">F1</option>
+                                <option value="F2" name="serie">F2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="contient">
+                        <div><p><i>Fichiers de confirmations (PDF)</i></p></div>
+                        <div class="mb-4">
+                            <label for="actnaissans" class="form-label">Telecharger l'acte de naissance:</label>
+                            <input type="file" class="form-control" id="actnaissans" name="actnaissans" accept=".PDF">
+                        </div>
+                        <div class="mb-4">
+                            <label for="nationalite" class="form-label">Telecharger la nationalité:</label>
+                            <input type="file" class="form-control" id="nationalite" name="nationalite" accept=".PDF">
+                        </div>
+                        <div class="mb-4">
+                            <label for="attestation" class="form-label">Telecharger l'attestation du BAC II:</label>
+                            <input type="file" class="form-control" id="attestation" name="attestation" accept=".PDF">
+                        </div>
+                </td>
+                <tr>
+                <td>
+                   <center><button type="submit" class="btn btn-primary" id="soumettre" name="soumettre" onclick="envoyer()">Soumettre</button></center> 
+                </td>
+            </tr>
+            </tr>
+            
+        </table>
+            </div><br>
+    </form>
+    </div>
+</center>
+    <footer>
+        <div class="footer">
+            <div class="div4">
+                <center>
+                <img src="logoiai.jpg" alt="" class="school-logo">
+                <p>La r&eacute;f&eacute;rence en mati&egrave;re d'informatique</p>
+            </center>
+            </div>
+            <div class="div5">
+                <p>Contactez-nous:</p>
+                <div class="contact-icons">
+                    <ul><li><a class="boutton2" href="tel:+22822212706"><i class="fa fa-phone"> (00228) 22212706</i></a></li>
+                        <li><a class="boutton2"href="tel:+22822204700"><i class="fa fa-phone"> (00228) 22204700</i></a></li>
+                        <li><a class="boutton2" href="mailto:iaitogo@yahoo.fr"><i class="fa fa-envelope"> iaitogo@yahoo.fr</i></a></li>
+                        <li><a class="boutton2" href="mailto:iaitogo@iai-togo.tg"><i class="fa fa-envelope"> iaitogo@iai-togo.tg</i></a></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="div5">
+                <p>Suivez nous:</p>
+                <div class="contact-icons">
+                    <ul>
+                        <li><a class="boutton2" href="https://www.instagram.com/iaitogo_officiel" target="_blank"><i class="fa fa-instagram"> iaitogo_officiel</i></a></li>
+                    </ul>
+                </div> 
+                <p>Localisation</p>
+                <div class="contact-icons">
+                    <ul>
+                        <li> <a class="boutton2" href="https://maps.app.goo.gl/qT9jruKGCFFQPzWG9" target="_blank"><i class="fa fa-map-marker">59 rue de la Kozah Nyékonakpoè</i></a></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="div5">
+                <p>Liens rapides:</p>
+                <div class="contact-icons">
+                    <ul>
+                        <li><a class="boutton2" href="acceuil2.php">Retour &agrave; l'accueil</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
